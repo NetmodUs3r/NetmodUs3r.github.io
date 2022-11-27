@@ -8,7 +8,7 @@
 <meta name="viewport" 
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-  <title>Netmod User Pendukung</title>
+  <title>i3Arc Apps</title>
   
   
   <link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
@@ -182,8 +182,8 @@ z-index:99;
 {
 z-index:5;
 position:absolute;
-left:0.8em;
-top:0.4em; by
+left:1em;
+top:0.4em;
 }
 
 .offdata
@@ -191,7 +191,7 @@ top:0.4em; by
 position:absolute;
 right:1em;
 top:0.3em;
-color:#FF001C;
+color:#009BA3;
 font-size:1.1em;
 }
 #listlink li div
@@ -209,12 +209,14 @@ border-radius:5px 0px 0px 5px;
 transition:0.5s;
 }
 
-#listlink li:nth-child(1) div{background:#CC0019;}
-#listlink li:nth-child(2) div{background:#00EDFF;}
-#listlink li:nth-child(3) div{background:#0200FF;}
-#listlink li:nth-child(4) div{background:#76f361;}
+#listlink li:nth-child(1) div{background:#fe7559;}
+#listlink li:nth-child(2) div{background:#fe7559;}
+#listlink li:nth-child(3) div{background:#fe7559;}
+#listlink li:nth-child(4) div{background:#e3aa12;}
 #listlink li:nth-child(5) div{background:#e3aa12;}
-#listlink li:nth-child(6) div{background:#12e392;}
+#listlink li:nth-child(6) div{background:#e3aa12;}
+#listlink li:nth-child(7) div{background:#e3aa12;}
+#listlink li:nth-child(8) div{background:#e3aa12;}
 
 #listlink li span
 {
@@ -336,48 +338,29 @@ padding:5px 10px;
 color:#f36175;
 }
 
-form {
-        background-color: #00465D;
-        width: 90%;
-        height: 44px;
-        border-radius: 5px;
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-      }
 
-      input {
-        all: unset;
-        font: 16px system-ui;
-        color: #fff;
-        height: 100%;
-        width: 100%;
-        padding: 6px 10px;
-      }
 
-      ::placeholder {
-        color: #fff;
-        opacity: 0.7; 
-      }
-      svg {
-        color: #fff;
-        fill: currentColor;
-        width: 24px;
-        height: 24px;
-        padding: 10px;
-      }
-
-      button {
-        all: unset;
-        cursor: pointer;
-        width: 44px;
-        height: 44px;
-      }
-      
-      blink {
-      	
-      
-
+.refbutton
+{
+display: inline-block;
+outline: 0;
+ border: none;
+                box-shadow: none;
+                cursor: pointer;
+                padding: 9px 22px;
+                font-size: 22px;
+                height: 50px;
+                font-weight: 400;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: normal;
+                background: linear-gradient(90deg,#00E3FF 0,#0074e4 100%);
+                border-radius: 50px;
+                transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+                :hover{
+                    box-shadow: 0 0 0 0.15rem #5ceace;
+                }
+                
 </style>
 
   
@@ -393,59 +376,68 @@ form {
     <nav id="mainmenu">
       <h2>Menu</h2>
       <ul>
-        <li onclick="location.href='index2.html';"><i class="fa fa-home"></i> Menu Utama</li>
-        <li onclick="location.href='cek-kuota.html';"><i class="fa fa-plus"></i> Cek Masa Aktif</li>
-        <li onclick="location.href='download.html';"><i class="fa fa-download"></i> Download</li>
-        <li onclick="location.href='tutorial.html';"><i class="fa fa-pencil"></i> Tutorial</li>
-        <li onclick="location.href='server.html';"><i class="fa fa-cogs"></i> Status Server</li>
+         <li onclick="location.href='index2.html';"><i class="fa fa-home"></i> Menu Utama</li>
+        
+        
       </ul>
     </nav>
-    
     <section id="mainscreen">
       <header>
         <i class="fa fa-align-justify" id="menu"></i>
-        <h1>i3Arc Network</h1>
+        <h1>Refresh Server</h1>
       </header>
       <section id="container">
-        <p class="intro"> </p>
+      	<center>
+      	<h2>Jika Mengalami Masalah Lag / Koneksi Tidak Stabil<br>Silahkan klik tombol dibawah untuk refresh Server.
+        <audio id="sound1" src="ok.mp3" preload="auto"></audio>
+<p><button class="refbutton" onclick="setTimeout(serverRefresh1, 2000); setTimeout(serverRefresh2, 5000); setTimeout(serverRefresh3, 9000); setTimeout(serverRefresh, 13000); setTimeout(alertadm, 16000);">REFRESH</button>
+<p id="succestxt1"></p>
+<p id="succestxt2"></p>
+<p id="succestxt3"></p>
+<p id="succestxt"></p>
         
+
         
-        <center>
-<img src="https://i.postimg.cc/wxrkgGtn/Picsart-22-10-25-05-31-23-182.png" alt="google" style="width:100%;height:40%;"></center>
-        
- <p class="intro">Silahkan Pilih Menu Dibawah</p>
-    <audio id="sound1" src="ok.mp3" preload="auto"></audio>
-     <ul id="listlink">
-     	<li>
-       <div></div><span onclick="window.location.href='/cek-kuota.html'" class="titles"><i class="fa fa-plus"></i>Cek Masa Aktif Kuota</span><span class="offdata">*</span>
-          </li>
-          <li>
-       <div></div><span onclick="window.location.href='/download.html'" class="titles"><i class="fa fa-download"></i>Download Config/Aplikasi</span>
-          </li>
-          <li>
-       <div></div><span onclick="window.location.href='/tutorial.html'" class="titles"><i class="fa fa-pencil"></i>Tutorial</span>
-          </li>
-          <li>
-       <div></div><span onclick="window.location.href='/server.html'" class="titles"><i class="fa fa-cogs"></i>Cek Status Server</span>
-           <li>
-       <div></div><span onclick="window.location.href='/speed.html'" class="titles"><i class="fa fa-dashboard"></i>Speedtest</span>
-          </li>
-          <li>
-       <div></div><span onclick="window.location.href='/refresh.html'" class="titles"><i class="fa fa-globe"></i>Refresh Server</span>
-          </li>
-        </ul>
-        
-      </footer>
+      </section>
     </section>
   </section>
 </section>
-<center>
-<font size="2" color="white">made with ❤️ by wr4ma</font><p>
-	
+
+<p><p><p><center>
+<font size="2" color="white">made with ❤️ by wr4ma</font></center>
+<script>
+	function serverRefresh1() {
+		document.getElementById("succestxt1").innerHTML = "<span style='color:#FFFFFF' size='1'>...Mengecek Status Server...</span>";
+}
+</script>
+<script>
+	function serverRefresh2() {
+		document.getElementById("succestxt2").innerHTML = "<span style='color:#FFFFFF' size='5'>...Mengecek Status Jaringan...</span>";
+}
+</script>
+<script>
+	function serverRefresh3() {
+		document.getElementById("succestxt3").innerHTML = "<span style='color:#FFFFFF'>...Tunggu Sebentar...</span>";
+}
+</script>
+<script>
+	function alertadm() {
+	document.getElementById('sound1').play(); 
+            alert("Jika ada masalah lain silahkan hubungi admin.");
+            }
+	</script>
+	<script>
+function serverRefresh() {
+	document.getElementById('sound1').play();
+  document.getElementById("succestxt").innerHTML = "<span style='color:#00FF20'> ✔️✔️✔️✔️✔️✔️✔️ <br> Server Berhasil Di Refresh ! <p>Silahkan tunggu beberapa detik agar server ter-refresh sempurna.</span>";
+}
+</script>
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script id="rendered-js" >
 $("#menu").click(function(){
   $("#mainmenu").toggleClass("showmenu");
+  
   $("#mainscreen").toggleClass("movemaincontainer");
 });
 
@@ -457,21 +449,7 @@ $("#menu").click(function(){
 });
     </script>
 
-  <script>
-      const f = document.getElementById('form');
-      const q = document.getElementById('query');
-      const google = 'https://www.google.com/search?q=';
-      const site = '';
-
-      function submitted(event) {
-        event.preventDefault();
-        const url = google + site + '+' + q.value;
-        const win = window.open(url, '_blank');
-        win.focus();
-      }
-
-      f.addEventListener('submit', submitted);
-    </script>
+  
 
 </body>
 
