@@ -32,11 +32,6 @@ font-family:'Andika', sans-serif;
 color:#000;
 }
 
-img {
-  width:80%;
-  height:50px;
-}
-
 #mobilescreen
 {
 width:340px;
@@ -159,7 +154,7 @@ background:#ffd371;
 {
 text-align:center;
 font-size:0.9em;
-color:#E3E3E3;
+color:#58626b;
 }
 
 #container
@@ -187,7 +182,7 @@ z-index:99;
 {
 z-index:5;
 position:absolute;
-left:0.8em;
+left:1em;
 top:0.4em;
 }
 
@@ -328,7 +323,7 @@ transition:0.2s;
 h2
 {
 text-align:center;
-color:#58626b;
+color:#84F8FF;
 font-size:1.1em;
 padding:10px 0px;
 }
@@ -358,28 +353,24 @@ color:#f36175;
     <nav id="mainmenu">
       <h2>Menu</h2>
       <ul>
-        <li onclick="location.href='index2.html';"><i class="fa fa-home"></i> Menu Utama</li>
-        <li onclick="location.href='cek-kuota.html';"><i class="fa fa-plus"></i> Cek Masa Aktif</li>
-        <li onclick="location.href='download.html';"><i class="fa fa-download"></i> Download</li>
-        <li onclick="location.href='tutorial.html';"><i class="fa fa-pencil"></i> Tutorial</li>
-        <li onclick="location.href='server.html';"><i class="fa fa-cogs"></i> Status Server</li>
+         <li onclick="location.href='live-tv.html';"><i class="fa fa-home"></i> Menu Utama</li>
+        
+        
       </ul>
     </nav>
     <section id="mainscreen">
       <header>
         <i class="fa fa-align-justify" id="menu"></i>
-        <h1>Cek Status Server</h1>
+        <h1>TransTV Live</h1>
       </header>
       <section id="container">
       	<center>
-      	<img src="https://i.postimg.cc/wxrkgGtn/Picsart-22-10-25-05-31-23-182.png" alt="google" style="width:100%;height:40%;">
+        <iframe width="100%" height="300" style="border:none;" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" src="https://m.vidio.com/live/733-trans-tv/embed"></iframe>
+        <h2>Klik icon [    ] untuk masuk ke mode fullscreen</h2>
+		
         
-        <p class="intro">Hijau = Server Normal<br>Kuning = Server Lag/Gangguan<br>Merah = Server Mati</p>
-        <img src="https://img1.picmix.com/output/stamp/normal/2/0/9/7/357902_f5d4e.gif" alt="google"></center>
-      	<p class="intro">Jika Status Server hijau tapi tidak bisa connect ke internet silahkan hubungi admin<p>
-		<center><a href="https://wa.me/6287899604277"><img src="https://i.postimg.cc/bJcgbzS7/pngfind-com-whatsapp-chat-png-2761849.png" alt="xx" style="width:80%;height:30%;"></a></center>
-
-</section>
+        
+      </section>
     </section>
   </section>
 </section>

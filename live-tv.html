@@ -32,11 +32,6 @@ font-family:'Andika', sans-serif;
 color:#000;
 }
 
-img {
-  width:80%;
-  height:50px;
-}
-
 #mobilescreen
 {
 width:340px;
@@ -159,7 +154,7 @@ background:#ffd371;
 {
 text-align:center;
 font-size:0.9em;
-color:#E3E3E3;
+color:#58626b;
 }
 
 #container
@@ -196,7 +191,7 @@ top:0.4em;
 position:absolute;
 right:1em;
 top:0.3em;
-color:#009BA3;
+color:#FF0600;
 font-size:1.1em;
 }
 #listlink li div
@@ -214,14 +209,15 @@ border-radius:5px 0px 0px 5px;
 transition:0.5s;
 }
 
-#listlink li:nth-child(1) div{background:#fe7559;}
-#listlink li:nth-child(2) div{background:#fe7559;}
-#listlink li:nth-child(3) div{background:#fe7559;}
-#listlink li:nth-child(4) div{background:#e3aa12;}
-#listlink li:nth-child(5) div{background:#e3aa12;}
-#listlink li:nth-child(6) div{background:#e3aa12;}
-#listlink li:nth-child(7) div{background:#e3aa12;}
-#listlink li:nth-child(8) div{background:#e3aa12;}
+#listlink li:nth-child(1) div{background:#31FF00;}
+#listlink li:nth-child(2) div{background:#31FF00;}
+#listlink li:nth-child(3) div{background:#31FF00;}
+#listlink li:nth-child(4) div{background:#31FF00;}
+#listlink li:nth-child(5) div{background:#31FF00;}
+#listlink li:nth-child(6) div{background:#31FF00;}
+#listlink li:nth-child(7) div{background:#31FF00;}
+#listlink li:nth-child(8) div{background:#31FF00;}
+#listlink li:nth-child(9) div{background:#31FF00;}
 
 #listlink li span
 {
@@ -359,27 +355,46 @@ color:#f36175;
       <h2>Menu</h2>
       <ul>
         <li onclick="location.href='index2.html';"><i class="fa fa-home"></i> Menu Utama</li>
-        <li onclick="location.href='cek-kuota.html';"><i class="fa fa-plus"></i> Cek Masa Aktif</li>
-        <li onclick="location.href='download.html';"><i class="fa fa-download"></i> Download</li>
-        <li onclick="location.href='tutorial.html';"><i class="fa fa-pencil"></i> Tutorial</li>
-        <li onclick="location.href='server.html';"><i class="fa fa-cogs"></i> Status Server</li>
+        
       </ul>
     </nav>
     <section id="mainscreen">
       <header>
         <i class="fa fa-align-justify" id="menu"></i>
-        <h1>Cek Status Server</h1>
+        <h1>Live TV</h1>
       </header>
       <section id="container">
       	<center>
-      	<img src="https://i.postimg.cc/wxrkgGtn/Picsart-22-10-25-05-31-23-182.png" alt="google" style="width:100%;height:40%;">
         
-        <p class="intro">Hijau = Server Normal<br>Kuning = Server Lag/Gangguan<br>Merah = Server Mati</p>
-        <img src="https://img1.picmix.com/output/stamp/normal/2/0/9/7/357902_f5d4e.gif" alt="google"></center>
-      	<p class="intro">Jika Status Server hijau tapi tidak bisa connect ke internet silahkan hubungi admin<p>
-		<center><a href="https://wa.me/6287899604277"><img src="https://i.postimg.cc/bJcgbzS7/pngfind-com-whatsapp-chat-png-2761849.png" alt="xx" style="width:80%;height:30%;"></a></center>
+             <ul id="listlink">
+     	<li>
+       <div></div><span onclick="window.location.href='/tv-sctv.html'" class="titles"><i class="fa fa-star"></i>SCTV</span>
+          </li>
+          <li>
+       <div></div><span onclick="window.location.href='/tv-indosiar.html'" class="titles"><i class="fa fa-star"></i>Indosiar</span>
+          </li>
+          <li>
+       <div></div><span onclick="window.location.href='/tv-trans.html'" class="titles"><i class="fa fa-star"></i>TransTV</span>
+          </li>
+          <li>
+       <div></div><span onclick="window.location.href='/tv-trans7.html'" class="titles"><i class="fa fa-star"></i>Trans7</span>
+          </li>
+          <li>
+       <div></div><span onclick="window.location.href='/tv-antv.html'" class="titles"><i class="fa fa-star"></i>ANTV</span>
+          </li>
+          <li>
+       <div></div><span onclick="window.location.href='#'" class="titles"><i class="fa fa-star"></i>RCTI</span><span class="offdata">offline</span>
+          </li>
+          <li>
+       <div></div><span onclick="window.location.href='#" class="titles"><i class="fa fa-star"></i>Global TV</span><span class="offdata">offline</span>
+       <li>
+       <div></div><span onclick="window.location.href='#'" class="titles"><i class="fa fa-star"></i>MNC TV</span><span class="offdata">offline</span>
+          </li>
+          <li>
+       <div></div><span onclick="window.location.href='/tv-net.html'" class="titles"><i class="fa fa-star"></i>NET TV</span>
+          </li>
 
-</section>
+      </section>
     </section>
   </section>
 </section>
